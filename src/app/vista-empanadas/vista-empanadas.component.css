@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 30px;
+    font-size: 60px;
+}
+
+section {
+    width: 90%;    
+    display: flex;
+    justify-content: space-evenly;
+}   
+
+.card {
+    width: 30%;
+}
+
+.magic {
+    font-family: sans-serif;
+    width: 30%;
+    margin-bottom: 22px;
+}
+
+.magic .img-container {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.magic .img-container img {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.magic:hover .img-container img {
+    transform: scale(1.3);
+}
+
+.magic a:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.magic .info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.magic .info-container h3 {
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.magic .info-container strong {
+    padding: 5px 15px;
+}
+.magic .add-cart {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.magic .add-cart:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}

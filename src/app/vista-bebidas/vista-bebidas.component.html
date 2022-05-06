@@ -1,0 +1,15 @@
+<h1>Bebidas</h1>
+<section>    
+        <div class="card magic" *ngFor="let product of productos">
+            <a href="#">
+                <div class="img-container">
+                    <img src="{{ product.image }}" alt="{{ product.name }}">
+                </div>   
+            </a>
+            <div class="info-container">
+                <h3>{{product.name}}</h3>
+                <strong>{{product.price}}</strong>
+                <a [routerLink]="['/Carrito']" class="add-cart">Añadir al carrito</a>
+            </div>
+        </div>
+</section>

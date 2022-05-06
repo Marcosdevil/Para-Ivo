@@ -1,0 +1,16 @@
+<table class="table-primary table-striped">
+    <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+    </tr>
+    <ng-container *ngFor="let product of productos">
+    <tr>
+        <th>{{product.name}}</th>
+        <th>{{product.quantity}}</th>
+        <th>${{product.price}}</th>
+    </tr>
+    </ng-container>
+</table>
+<p>Total = ${{total()}}</p>
+<button>Comprar</button>
